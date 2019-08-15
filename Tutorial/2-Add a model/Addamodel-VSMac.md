@@ -9,7 +9,7 @@ The tutorial below is based on [*"Get started with Razor Pages in ASP.NET Core"*
 ## Add a data model
 In this section, we are adding classes to manage movies in a database.
 
-* In Solution Pad, right-click the RazorPagesMovie project > Add > New Folder. Name the folder Models.
+* In Solution Pad, right-click the RazorPagesMovie project > Add > New Folder. Name the folder `Models`.
 * Right click the Models folder. Select Add > New File.
 * Select General > Empty Class and name the class `Movie`.
 
@@ -71,7 +71,7 @@ Open the `appsettings.json` file and add the `MovieContext` connection string as
 }
 ```
 #### Register the database context
-Open Startup.cs file and add the code below to the ConfigureServices method.
+Open `Startup.cs` file and add the code below to the `ConfigureServices` method.
 ``` cs
 public void ConfigureServices(IServiceCollection services)
 {
@@ -90,11 +90,11 @@ Add the following using statements: `using RazorPagesMovie.Models` and `using Mi
 
 #### Add NuGet packages for scaffolding and Sqlite
 
-Add the `Microsoft.VisualStudio.Web.CodeGeneration.Design` to the project. Right click on Dependencies and select Add Packages in Solution Pad for the project. In the Add Packages dialog, search for Microsoft.VisualStudio.Web.CodeGeneration.Design. Check the checkbox and click Add Package.
+Add the `Microsoft.VisualStudio.Web.CodeGeneration.Design` to the project. Right click on Dependencies and select Add Packages in Solution Pad for the project. In the Add Packages dialog, search for `Microsoft.VisualStudio.Web.CodeGeneration.Design`. Check the checkbox and click Add Package.
 
 ![](images/add-package-menu-vsmac.png)
 
-Repeat this to add the Microsoft.EntityFrameworkCore.Sqlite package.
+Repeat this to add the `Microsoft.EntityFrameworkCore.Sqlite` package.
 
 #### Perform initial migration
 
