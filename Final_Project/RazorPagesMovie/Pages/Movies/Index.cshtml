@@ -11,7 +11,7 @@
 <h1>Razor Page Movies</h1>
 
 <p>
-    <a asp-page="Create">Create New</a>
+    <a asp-page="Create"><img alt="create new" src="/images/icon-add.png"/> Create new</a>
 </p>
 <form>
     <p>
@@ -57,9 +57,9 @@
                 @Html.DisplayFor(modelItem => item.Price)
             </td>
             <td>
-                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+                <a asp-page="./Edit" asp-route-id="@item.ID"><img alt="edit" src="/images/icon-edit.png"/></a> |
+                <a asp-page="./Details" asp-route-id="@item.ID"><img alt="details" src="/images/icon-details.png" /></a> |
+                <a asp-page="./Delete" asp-route-id="@item.ID"><img alt="delete" src="/images/icon-delete.png" /></a>
             </td>
         </tr>
 }
